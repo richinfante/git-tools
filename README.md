@@ -36,3 +36,15 @@ git remote-create my-server secret-project
 ```
 
 
+## REMOTE-ADD
+Usage: `git remote-add [hostname] [reponame]`
+
+Adds a remote repo as a remote to the current one. This differs from 
+`git remote add`, as it checks that the repo exists and automagically
+names it after the remote.
+
+```bash
+git remote-add my-server secret-project
+```
+
+
