@@ -1,10 +1,10 @@
 # SSH Shortcuts for git
 
 For self-hosted git, I follow the convention that all bare repos are in the
-user's $HOME/git directory. This way, it's uniform across all my systems
+user's `$HOME/git` directory. This way, it's uniform across all my systems
 and allows me to easily backup and retrive data from them.
 
-These scripts were made with this in mind. Place them in your path, and
+These scripts were made with this in mind. Place them in your `$PATH`, and
 you'll be able to do the following:
 
 
@@ -44,7 +44,7 @@ Adds a remote repo as a remote to the current one. This differs from
 names it after the remote.
 
 ```bash
-git remote-add my-server secret-project
+$ git remote-add my-server secret-project
 ```
 
 
