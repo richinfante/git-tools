@@ -12,7 +12,7 @@ you'll be able to do the following:
 Usage: `git remote-ls [hostname]`
 ```bash
 # List repos in the git/ directory.
-~# git remote-ls my-server
+$ git remote-ls my-server
 app-repo.git/
 thing.git/
 notes.git/
@@ -22,7 +22,7 @@ website.git/
 ## REMOTE-CLONE
 Usage: `git remote-clone [hostname] [reponame]`
 ```bash
-git remote-clone my-server website
+$ git remote-clone my-server website
 cloning into "website"...
 ```
 
@@ -32,7 +32,7 @@ Usage: `git remote-create [hostname] [reponame]`
 Create a bare repo on the remote. Repos are created as `[reponame].git`
 
 ```bash
-git remote-create my-server secret-project
+$ git remote-create my-server secret-project
 ```
 
 
