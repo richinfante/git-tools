@@ -1,0 +1,21 @@
+#!/bin/bash
+
+MACHINE=$1
+REPONAME=$2
+
+# List all git repos on a remote
+DIRNAME="\"${REPONAME}.git\""
+
+CMDS="cd ~/ && \
+mkdir -p git/ &&
+cd git/ && if [ -e $DIRNAME ]; \
+then exit 0; \
+else exit 1; \
+fi"
+
+ssh $1 $CMDS
+if [ "$?" == "0" ]; then
+  git clone "$1:git/$REPONAME.git"
+else
+  echo "Repo Does not exist!: \"$1:git/$REPONAME.git\""
+fi

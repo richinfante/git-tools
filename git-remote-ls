@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# List all git repos on a remote
+ssh $1 'ls $HOME/git'
